@@ -1,0 +1,12 @@
+const inputSlider=document.querySelector("[slider]");
+const length=document.querySelector("[password-length]");
+const passwordDisplat=document.querySelector(".display");
+const copyButton=document.querySelector("[data-copy]");
+const copyMsg=document.querySelector("[copy-msg]");
+const upperCase=document.querySelector("#uppercase");
+const lowerCase=document.querySelector("#lowerrcase");
+const numbers=document.querySelector("#numbers");
+const symbols=document.querySelector("#symbols");
+const dataIndicator=document.querySelector("[data-indicator]");
+const generatebtn=document.querySelector(".generate-password");
+const allCheck=document.querySelector("input[type=checkbox]");

@@ -157,7 +157,7 @@ generatebtn.addEventListener('click', () =>{
         password+=arr[random]();
     }
     passwordDisplay.value=password;
- 
+    // shuffle is yet to done 
     calcStrength();
     
 });

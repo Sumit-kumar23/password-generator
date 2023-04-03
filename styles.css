@@ -30,7 +30,8 @@ button {
 
     --dk-text: hsl(198, 20%, 13%);
 }
-.container{
+
+body{
     width: 100wh;
     height: 100vh;
     display: flex;
@@ -43,5 +44,116 @@ button {
 h1{
     color: white;
     opacity: 70%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+      
 }
 
+.result{
+    position: relative;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    border-bottom: 0.35 solid var(--lt-violet2);
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+    
+}
+
+.container{
+    width: 90%;
+    max-width: 450px;
+} 
+
+.display{
+    width: 100%;
+    background-color: transparent;
+    padding: 1.15rem 1rem;
+    color: var(--vb-yello);
+    font-weight:600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border: none;
+}
+
+.display::placeholder{
+    position: absolute;
+    top:50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: var(--vb-yellow); 
+    opacity: .65;
+    transform: translateY(-50%);
+}
+
+.result button{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+}  
+
+.input{
+    width: 100%;
+    background-color: var(--dk-violet);
+    padding: 2rem;
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+}
+
+.password-length{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+}
+
+.password-length p:nth-child(1){
+    
+    color:white;
+    font-size: 1.5rem;
+}
+
+.password-length p:nth-child(2){
+    color: var(--vb-yellow);
+    font-size: 1.5rem;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+
+}
+
+.strength-container p:nth-child(1){
+    color:var(--pl-white);
+    font-size: 1.5rem;
+}
+
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.generate-password{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--vb-violet);
+    text-align: center;
+    border-radius: .75rem;
+    border-bottom: 0.35rem solid var(--vb-yellow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 1.25rem;
+}

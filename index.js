@@ -1,5 +1,5 @@
 const inputSlider=document.querySelector("[slider]");
-const lengthDisplay=document.querySelector(".password-length");
+const lengthDisplay=document.querySelector("[data-lengthDisplay]");
 const passwordDisplay=document.querySelector(".display");
 const copyButton=document.querySelector("[data-copy]");
 const copyMsg=document.querySelector("[copy-msg]");
@@ -9,7 +9,7 @@ const numbersCheck=document.querySelector("#numbers");
 const symbolsCheck=document.querySelector("#symbols");
 const dataIndicator=document.querySelector("[data-indicator]");
 const generatebtn=document.querySelector(".generate-password");
-const allCheckBox=document.querySelectorAll("input[type=checkbox]");
+const allCheckBox=document.querySelectorAll("input[type=checkbox]"); // queryAll is used not query 
 const sym='~!@#$%^&*()[]{};:<>,.?/\|';
 
 
@@ -23,6 +23,7 @@ function handleSlider(){
     lengthDisplay.innerText = passwordLength;
      
 }
+//setIndicator("#0ffc");
 
 
 function setIndicator(color){
@@ -157,7 +158,7 @@ generatebtn.addEventListener('click', () =>{
         password+=arr[random]();
     }
     passwordDisplay.value=password;
-
+ 
     calcStrength();
     
 });

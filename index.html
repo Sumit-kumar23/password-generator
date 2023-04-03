@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>Password Generator
+    <div class="container ">
+        <h1>password generator 
         </h1>
         <div class="result">
-            <input readonly placeholder="password" class="display">
+            <input readonly placeholder="PASSWORD" class="display">
             <button data-copy>
-                <span copy-msg></span>
+                <span class="copy"></span>
                 <img src="copy.svg" alt="" height="23" width="23">
             </button>
         </div>
         <div class="input">
-                <div class="password-length" password-length>
-                     <p>Password Length</p>
-                      <p lengthNumber>0</p>
+                <div class="password-length">
+                    <p>Password--Length</p>
+                    <p data-lengthDisplay></p>
                 </div>
                 <input type="range" min="1" max="20" class="slider" step="1" slider>
                 <!-- Check boxes -->
@@ -42,14 +42,14 @@
                     <label for="symbols ">Includes symbols letters</label>
                 </div>
                 <!-- Strength  -->
-                <div>
+                <div class="strength-container"> 
                     <p>Strength</p>
-                    <div data-indicator> </div>
+                    <div class="indicator" data-indicator> </div>
                 </div>
                 <button class="generate-password">Generate Password</button>
         </div>
     </div>
 
-    <script ></script>
+    <script src="index.js" ></script>
 </body>
 </html>
